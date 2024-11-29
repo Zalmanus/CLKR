@@ -1,0 +1,48 @@
+{
+  "name": "clkr",
+  "version": "0.0.1",
+  "description": "Simple JavaScript Clicker Game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zalmanus/CLKR.git"
+  },
+  "keywords": [
+    "clicker",
+    "game",
+    "js",
+    "javascript"
+  ],
+  "author": "Zalmanus",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Zalmanus/CLKR/issues"
+  },
+  "homepage": "https://github.com/Zalmanus/CLKR#readme",
+  "devDependencies": {
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.game.clke",
+    "productName": "clkr",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  },
+  "dependencies": {
+    "electron": "33.2.1"
+  }
+}
